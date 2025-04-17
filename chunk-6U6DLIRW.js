@@ -1,0 +1,1 @@
+import{a as t}from"./chunk-JKVIU2IQ.js";import{g as e}from"./chunk-4BZPK5W5.js";import{T as r}from"./chunk-4NTA57OQ.js";var f=(n,i)=>{let o=r(t),a=r(e);return o.isAdmin()?!0:a.createUrlTree(["/dashboard/user-dashboard"])};export{f as a};

@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/quality",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -28,6 +28,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/404.html",
               {
                 "glob": "**/*",
                 "input": "src/assets",
