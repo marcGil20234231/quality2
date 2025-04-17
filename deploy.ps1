@@ -2,7 +2,6 @@
 ng build --configuration production --base-href /quality2/ --output-path docs
 
 # Create necessary files
-Copy-Item "src/404.html" -Destination "docs/"
 New-Item -Path "docs/.nojekyll" -ItemType File -Force
 
 # Add all files
