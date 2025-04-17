@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>Quality Education PH</title>
     <script>
-      window.location.href = '/quality2/';
+      // Store the current URL
+      sessionStorage.redirect = window.location.href;
+
+      // Redirect to the base URL
+      window.location.replace('/quality2/');
     </script>
   </head>
   <body>
-    <h1>Redirecting to home page...</h1>
+    <h1>Redirecting...</h1>
   </body>
 </html> 
