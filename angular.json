@@ -28,10 +28,11 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/404.html",
               {
                 "glob": "**/*",
-                "input": "src/assets/",
-                "output": "/assets/"
+                "input": "src/assets",
+                "output": "/assets"
               }
             ],
             "styles": [
@@ -42,16 +43,15 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
-            "baseHref": "/quality/",
-            "deployUrl": "/quality/"
+            "baseHref": "/quality2/"
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -104,15 +104,6 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/quality/",
-            "name": "Quality Education Platform",
-            "email": "",
-            "noSilent": true
           }
         }
       }
